@@ -49,13 +49,13 @@ export default function Timeline({
   }
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6">
-      <h2 className="text-xl font-semibold text-gray-900 mb-4">Timeline</h2>
+    <div className="bg-white rounded-lg shadow-lg p-4">
+      <h2 className="text-lg font-semibold text-gray-900 mb-3">Timeline</h2>
 
       {/* Timeline Bar */}
-      <div className="relative mb-4">
+      <div className="relative mb-3">
         <div
-          className="w-full h-12 bg-gray-200 rounded-lg cursor-pointer relative overflow-hidden"
+          className="w-full h-10 bg-gray-200 rounded-lg cursor-pointer relative overflow-hidden"
           onClick={handleTimelineClick}
         >
           {/* Current Time Indicator */}
@@ -85,24 +85,24 @@ export default function Timeline({
         </div>
 
         {/* Time Labels */}
-        <div className="flex justify-between text-xs text-gray-500 mt-2">
+        <div className="flex justify-between text-xs text-gray-500 mt-1">
           <span>{formatTime(0)}</span>
           <span>{formatTime(duration)}</span>
         </div>
       </div>
 
       {/* Legend */}
-      <div className="flex gap-4 text-sm">
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-green-500"></div>
+      <div className="flex gap-3 text-xs">
+        <div className="flex items-center gap-1.5">
+          <div className="w-2.5 h-2.5 rounded-full bg-green-500"></div>
           <span className="text-gray-600">Body Language</span>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-blue-500"></div>
+        <div className="flex items-center gap-1.5">
+          <div className="w-2.5 h-2.5 rounded-full bg-blue-500"></div>
           <span className="text-gray-600">Vocal</span>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-red-500"></div>
+        <div className="flex items-center gap-1.5">
+          <div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
           <span className="text-gray-600">Speech</span>
         </div>
       </div>

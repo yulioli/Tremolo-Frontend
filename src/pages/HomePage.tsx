@@ -75,9 +75,9 @@ export default function HomePage() {
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-8">
       <div className="text-center mb-12">
         <h1 className="text-5xl font-bold text-gray-900 mb-2">Tremolo</h1>
-        <p className="text-lg text-gray-600">
+        <h2 className="text-lg text-gray-600">
           Bridge the gap between your ideas and the world
-        </p>
+        </h2>
       </div>
 
       <div

@@ -49,7 +49,7 @@ const VideoPlayer = forwardRef<VideoPlayerRef, VideoPlayerProps>(
           ref={videoRef}
           src={videoUrl}
           controls
-          className="w-full h-auto"
+          className="w-full h-auto max-h-[400px] object-contain"
         />
       </div>
     )
